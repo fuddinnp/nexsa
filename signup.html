@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+
+    <script src="js/perfect-scrollbar.js"></script>
+
+
+
+
+    <title>Nexsa </title>
+</head>
+
+<body class="">
+
+
+
+
+    <div class="container-fluid main-wrapper  p-0">
+
+
+        <div class="main-container gradient-primary">
+
+
+            <!-- <div class="row m-0">
+
+                <div class="col-lg-12 top-bar-wraps d-flex justify-content-between p-2">
+
+                    <button>
+                        < </button>
+
+                            <div class="top-right-btn d-flex justify-content-between align-items-center">
+                                <p>Don't have an account?</p>
+                                <button>Get Started</button>
+                            </div>
+
+                </div>
+
+            </div> -->
+
+            <div class="row m-0">
+
+                <div class="col-lg-12 top-bar-wraps d-flex justify-content-center p-4">
+                    <!-- <h1 class="h1">Jobsly</h1> -->
+                    <img src="images/nexsa-logo.svg" class="main-logo" alt="">
+
+                </div>
+
+            </div>
+
+
+            <div class="row m-0 main-content-wrap fixed-bottom ">
+
+                <div class="signup-top-line"></div>
+
+                <div class="col-lg-12 signup-btns-wrap d-flex justify-content-around align-items-center p-2">
+                    <button class="btn-link active">Sign Up</button>
+                    <button class="btn-link ">Login</button>
+                </div>
+
+
+                <div class="login-container col-lg-12">
+                    <div class="login-form">
+                        <div class="form-group error-field">
+                            <label for="username">Full Name</label>
+                            <input type="text" id="username" name="username" required>
+                            <p class="error-txt">Please enter your fullname</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Phone Numbr</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Email</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button class="login-button">Sign in</button>
+                        <!-- <button class="login-forgot">Forgot your password?</button> -->
+                        <!-- <button class="register-button">Or Sign in with</button> -->
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="js/custom.js"> </script>
+
+    <script>
+        $('.collapse, .collapse1 ').collapse()
+    </script>
+
+    <script>
+            /*
+             Slidemenu
+           */
+            (function () {
+                var $body = document.body,
+                    $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+                if (typeof $menu_trigger !== 'undefined') {
+                    $menu_trigger.addEventListener('click', function () {
+                        $body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
+                    });
+                }
+
+            }).call(this);
+    </script>
+
+
+    <script type="text/javascript">
+        function DropDown(el) {
+            this.dd = el;
+            this.initEvents();
+        }
+        DropDown.prototype = {
+            initEvents: function () {
+                var obj = this;
+
+                obj.dd.on('click', function (event) {
+                    $(this).toggleClass('active');
+                    event.stopPropagation();
+                });
+            }
+        }
+
+        $(function () {
+
+            var dd = new DropDown($('#dd'));
+
+            $(document).click(function () {
+                // all dropdowns
+                $('.wrapper-dropdown-2').removeClass('active');
+            });
+
+        });
+    </script>
+
+    <script>
+        // Initialize the plugin
+        const demo = document.querySelector('#scroll');
+
+        const ps = new PerfectScrollbar(demo);
+
+        // Handle size change
+        document.querySelector('#resize').addEventListener('click', () => {
+
+            // Get updated values
+            width = document.querySelector('#width').value;
+            height = document.querySelector('#height').value;
+
+            // Set demo sizes
+            demo.style.width = `${width}px`;
+            demo.style.height = `${height}px`;
+
+            // Update Perfect Scrollbar
+            ps.update();
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
