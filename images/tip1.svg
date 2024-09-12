@@ -1,0 +1,15 @@
+<svg width="256" height="215" viewBox="0 0 256 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 44.5135C0 19.9294 19.8985 0 44.4444 0H211.556C236.102 0 256 19.9294 256 44.5135V147.785C256 172.369 236.102 192.298 211.556 192.298H195.111L156 215V192.298H44.4444C19.8985 192.298 0 172.369 0 147.785V44.5135Z" fill="url(#paint0_linear_643_33897)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M147.93 64.2182C147.93 71.9418 141.669 78.203 133.945 78.203C126.221 78.203 119.96 71.9418 119.96 64.2182C119.96 56.4946 126.221 50.2334 133.945 50.2334C137.654 50.2334 141.211 51.7068 143.834 54.3295C146.456 56.9521 147.93 60.5092 147.93 64.2182Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M151.183 90.0337H114.037C106.71 90.0337 100.77 96.2705 100.77 103.964C100.77 111.657 106.71 117.894 114.037 117.894H151.183C158.51 117.894 164.45 111.657 164.45 103.964C164.45 96.2705 158.51 90.0337 151.183 90.0337Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M186.48 77.028C186.48 84.7516 180.219 91.0128 172.495 91.0128C164.771 91.0128 158.51 84.7516 158.51 77.028C158.51 69.3044 164.771 63.0432 172.495 63.0432C176.204 63.0432 179.761 64.5166 182.383 67.1393C185.006 69.7619 186.48 73.319 186.48 77.028Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M189.733 102.843H152.586C145.259 102.843 139.32 109.08 139.32 116.773C139.32 124.467 145.259 130.704 152.586 130.704H189.733C197.06 130.704 203 124.467 203 116.773C203 109.08 197.06 102.843 189.733 102.843Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M108.16 77.028C108.16 84.7516 101.899 91.0128 94.1752 91.0128C86.4514 91.0128 80.1904 84.7516 80.1904 77.028C80.1904 69.3044 86.4514 63.0432 94.1752 63.0432C97.884 63.0432 101.441 64.5166 104.064 67.1393C106.687 69.7619 108.16 73.319 108.16 77.028Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M111.414 102.843H74.2668C66.9397 102.843 61 109.08 61 116.773C61 124.467 66.9397 130.704 74.2668 130.704H111.414C118.741 130.704 124.68 124.467 124.68 116.773C124.68 109.08 118.741 102.843 111.414 102.843Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_643_33897" x1="0" y1="107.5" x2="256" y2="107.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE5757"/>
+<stop offset="1" stop-color="#8D52FD"/>
+</linearGradient>
+</defs>
+</svg>

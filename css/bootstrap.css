@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*************** TALHA Variables *********************/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9768,7 +9768,8 @@ yx-axis
 
 /* ---------------------------------------- */
 body {
-  color: #fff; }
+  color: #fff;
+  font-family: "Roboto", sans-serif !important; }
 
 .main-container {
   background: #bfbfbf;
@@ -10225,7 +10226,7 @@ input[type="checkbox"] {
 .create-box-wrap {
   background: #fff;
   border-radius: 15px;
-  padding: 20px;
+  padding: 48px 20px;
   margin: 100px 15px 15px 15px;
   display: flex;
   flex-direction: column;
@@ -10234,6 +10235,7 @@ input[type="checkbox"] {
   text-align: center; }
 
 .create-box-wrap h2 {
+  font-family: "Roboto", sans-serif;
   color: #0A0A0A;
   font-size: 20px;
   font-weight: 600;
@@ -10300,10 +10302,11 @@ input[type="checkbox"] {
 
 .welcome-content-wrap h2 {
   color: #000;
-  font-size: 36px;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
   padding: 10px 15px;
-  line-height: 38px; }
+  line-height: 28px; }
 
 .welcome-content-wrap p {
   color: #000;
@@ -10335,16 +10338,38 @@ input[type="checkbox"] {
   color: #8F52FA;
   font-size: 18px;
   padding: 20px;
-  width: 80%; }
+  width: 80%;
+  background: transparent; }
 
 .btn-flat {
   background: #8F52FA !important;
   border: 0px solid #ccc !important;
   color: #fff;
   font-size: 18px;
-  padding: 8px 20px;
+  padding: 12px 20px;
   border-radius: 30px;
   width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.btn-border {
+  background: transparent !important;
+  border: 2px solid #8F52FA !important;
+  color: #000;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.btn-disable {
+  background: #d7d7d7 !important;
+  border: 0px solid #8F52FA !important;
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px !important;
+  padding: 12px 20px;
+  border-radius: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
 
@@ -10662,7 +10687,15 @@ textarea {
   gap: 10px;
   font-size: 1rem !important;
   border-radius: 30px;
-  grid-area: span 1 / span 1; }
+  grid-area: span 1 / span 1;
+  line-height: 6px; }
+
+.create-profile-contnet-wrap {
+  text-align: center; }
+
+.create-profile-contnet-wrap button {
+  border: 0px solid #ccc;
+  margin-bottom: 15px; }
 
 /*767 screen end here*/
 /*768 to 1023 screen css*/
@@ -11413,6 +11446,11 @@ textarea {
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-animation: fade 500ms;
     animation: fade 500ms; } }
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal; }
+
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -11433,6 +11471,16 @@ textarea {
   font-weight: 700;
   font-style: normal; }
 
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal; }
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic; }
+
 .roboto-light-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -11451,6 +11499,11 @@ textarea {
 .roboto-bold-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  font-style: italic; }
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-style: italic; }
 
 .heading-big {

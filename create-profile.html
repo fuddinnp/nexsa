@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+  <script src="js/perfect-scrollbar.js"></script>
+
+
+
+
+  <title>Nexsa </title>
+</head>
+
+<body class="">
+
+
+
+
+  <div class="container-fluid main-wrapper p-0">
+
+
+    <div class="main-containerw">
+
+      <!-- <div class="row m-0">
+
+                <div class="col-lg-12 top-bar-wraps d-flex justify-content-center p-2">
+                    <h1 class="h1 text-primary">Mass msg</h1>
+                </div>
+
+            </div> -->
+
+      <div class="col-lg-12 top-bar-wraps d-flex align-items-center justify-content-between pb-4 pt-4">
+        <button class="h6 btn-arrow"><img src="images/left-arrow.png" alt=""> Back</button>
+        <h1 class="h3 text-black"></h1>
+        <button class="h6  btn-arrow">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- Create <img src="images/right-arrow.png" alt=""> -->
+
+        </button>
+      </div>
+
+      <div class="row m-0">
+
+        <div class="col-lg-12">
+          <div>
+            <div class="login-form">
+              <div class="form-group error-fields">
+                <h2 class="roboto-medium text-black mb-3" style="font-size: 24px;">
+                  Location
+                </h2>
+                <input type="text" id="username" name="username" required>
+                <!-- <p class="error-txt">Please enter your email</p> -->
+              </div>
+
+            </div>
+            <div class="create-profile-contnet-wrap mt-5 pt-4">
+              <button class="gradient-primary mt-4 next-btn w-auto">Create Profile</button>
+              <button class="skip-btn w-100 pt-2 pb-1">Skip-you can set up later in settings</button>
+              <!-- <p class=" p-0 text-light-gray small-font">you can set up later in settings</p> -->
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="row m-0 footer-bar-wraps">
+
+        <div class="col-lg-12 footer-icon-wrap">
+          <button class="active-nav"><img src="images/message-icon.png" alt="">
+            <p>Chat</p>
+          </button>
+          <button><img src="images/gallery-line.png" alt="">
+            <p>Gallery</p>
+          </button>
+          <button><img src="images/home-house-line.png" alt="">
+            <p>Home</p>
+          </button>
+          <button><img src="images/user-icon-line.png" alt="">
+            <p>Contacts</p>
+          </button>
+          <button><img src="images/setting4.png" alt="">
+            <p>Settings</p>
+          </button>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+  <script src="js/custom.js"> </script>
+
+  <script>
+    $('.collapse, .collapse1 ').collapse()
+  </script>
+
+  <script>
+      /*
+       Slidemenu
+     */
+      (function () {
+        var $body = document.body,
+          $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+        if (typeof $menu_trigger !== 'undefined') {
+          $menu_trigger.addEventListener('click', function () {
+            $body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
+          });
+        }
+
+      }).call(this);
+  </script>
+
+
+  <script type="text/javascript">
+    function DropDown(el) {
+      this.dd = el;
+      this.initEvents();
+    }
+    DropDown.prototype = {
+      initEvents: function () {
+        var obj = this;
+
+        obj.dd.on('click', function (event) {
+          $(this).toggleClass('active');
+          event.stopPropagation();
+        });
+      }
+    }
+
+    $(function () {
+
+      var dd = new DropDown($('#dd'));
+
+      $(document).click(function () {
+        // all dropdowns
+        $('.wrapper-dropdown-2').removeClass('active');
+      });
+
+    });
+  </script>
+
+  <script>
+    // Initialize the plugin
+    const demo = document.querySelector('#scroll');
+
+    const ps = new PerfectScrollbar(demo);
+
+    // Handle size change
+    document.querySelector('#resize').addEventListener('click', () => {
+
+      // Get updated values
+      width = document.querySelector('#width').value;
+      height = document.querySelector('#height').value;
+
+      // Set demo sizes
+      demo.style.width = `${width}px`;
+      demo.style.height = `${height}px`;
+
+      // Update Perfect Scrollbar
+      ps.update();
+    });
+  </script>
+
+
+
+
+
+</body>
+
+</html>
