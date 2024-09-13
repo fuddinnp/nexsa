@@ -54,11 +54,11 @@
 
 
 
-            <div class="row m-0">
+            <div class="row m-0 justify-content-center">
 
-                <div class="col-lg-12 p-2 px-3">
+                <div class="col-lg-4 col-sm-12 p-2 px-3">
 
-                    <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex justify-content-between align-items-center px-3 mb-3">
                         <h3 class="text-black">Send Message to Chat</h3>
                         <div class="toggle">
                             <input type="checkbox" />
@@ -66,7 +66,7 @@
                         </div>
 
                     </div>
-                    <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="d-flex justify-content-between align-items-center px-3 mb-4">
                         <h3 class="text-black">Send SMS</h3>
                         <div class="toggle">
                             <input type="checkbox" checked />
@@ -84,31 +84,33 @@
                         <div class="form-group">
                             <label class="text-black" for="username">Message</label>
                             <!-- <input type="text" id="username" name="username" required> -->
-                            <textarea name="" id="">It is informed...</textarea>
+                            <textarea name="" cols="4" row="50" id="">It is informed...</textarea>
                         </div>
 
-                        <div class="d-flex justify-content-start align-items-center text-gray">
-                            Attachment <img style="width: 32px;" class="ml-3" src="images/solar_paperclip-bold.svg"
+                        <div class="d-flex justify-content-start align-items-center text-gray mb-2">
+                            Attachment <img style="width: 24px;" class="ml-3" src="images/solar_paperclip-bold.svg"
                                 alt="">
                         </div>
 
                         <div class="selected-files-wrap">
                             <div class="file-box">
-                                <p class="text-black">Photo.png</p><img src="images/close-icon.svg" width="25px"
+                                <p class="text-black">Photo.png</p><img src="images/close-icon.svg" width="20px"
                                     height="25px" alt="">
                             </div>
                             <div class="file-box">
-                                <p class="text-black">Document.pdf</p><img src="images/close-icon.svg" width="25px"
+                                <p class="text-black">Document.pdf</p><img src="images/close-icon.svg" width="20px"
                                     height="25px" alt="">
                             </div>
                         </div>
 
                         <div class="text-info-wrap text-black py-4">
-                            <h3 class="mb-2">SMS Message</h3>
+                            <h3 class="mb-2 h6">SMS Message</h3>
                             <p>[name] sent you message in the Nexsa app. To view your message, open Nexsa here link to
                                 app download open app or contact [name] here.</p>
                         </div>
-                        <button class="login-button ">Send</button>
+                        <div class="col-lg-4 col-sm-12 mt-5 text-center">
+                        <button class="login-button w-auto ">Send</button>
+                        </div>
                         <!-- <button class="login-forgot">Forgot your password?</button> -->
                         <!-- <button class="register-button">Or Sign in with</button> -->
                         <br />

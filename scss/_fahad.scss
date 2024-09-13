@@ -1,5 +1,6 @@
 body {
   color: #fff;;
+  font-size: 14px;
   font-family: "Roboto", sans-serif !important;
 }
 .main-container {
@@ -62,12 +63,12 @@ body {
 }
 .main-logo { width: 65%;}
 .login-button {
-  width: 100%;
-  padding: 16px  25px;
+  font-size: 14px;
+  padding: 16px  40px;
   box-sizing: border-box;
   border: none;
   border-radius: 25px;
-  color: #ecf0f1;
+  color: #fff;
   background: rgb(254,87,89) !important;
 background: linear-gradient(90deg, rgba(254,87,89,1) 0%, rgba(142,82,252,1) 100%) !important;
   cursor: pointer;
@@ -115,7 +116,7 @@ background: linear-gradient(90deg, rgba(254,87,89,1) 0%, rgba(142,82,252,1) 100%
 .signup-btns-wrap .btn-link {
   background: transparent;
   border: 0px solid #ccc;
-  font-size: 16px;
+  font-size: 14px;
   color: #89909E;
   font-weight: 600;
   line-height: 30px;
@@ -622,28 +623,28 @@ input[type="checkbox"] {
 }
 .next-btn {
   color: #fff;
-  font-size: 18px;
-  padding: 16px 50px;
+  font-size: 14px;
+  padding: 16px 40px;
   border-radius: 30px; 
-  width: 80%;
+  // width: 80%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 .skip-btn {
   color: #8F52FA;
-  font-size: 18px;
-  padding: 20px;
-  width: 80%;
+  font-size: 14px;
+  padding: 20px 40px;
+  // width: 80%;
   background: transparent;
 }
 .btn-flat {
   background: #8F52FA !important;
   border: 0px solid #ccc !important;
   color: #fff;
-  font-size: 18px;
-  padding: 12px 20px;
+  font-size: 14px;
+  padding: 12px 40px;
   border-radius: 30px;
-  width: 80%;
+  // width: 80%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 
@@ -652,8 +653,8 @@ input[type="checkbox"] {
   background: transparent !important;
   border: 2px solid #8F52FA !important;
   color: #000;
-  font-size: 18px;
-  padding: 12px 20px;
+  font-size: 14px;
+  padding: 12px 40px;
   border-radius: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -663,9 +664,9 @@ input[type="checkbox"] {
   background: #d7d7d7 !important;
   border: 0px solid #8F52FA !important;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 26px !important;
-  padding: 12px 20px;
+  padding: 12px 40px;
   border-radius: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -927,7 +928,7 @@ textarea {
   margin-top: -58px;
 }
 .user-title-profile {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
 }
 .profile-btns-wrap {
   gap: 15px;
@@ -942,7 +943,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 .profile-setting-btns-wrap {
   gap: 15px;
@@ -972,6 +973,7 @@ justify-content: center;
   background-color: #8F52FA;
   border-radius: 20px;
   color: #fff;
+  font-size: 14px;
   padding: 7px 14px;
 }
 .add-photo {
@@ -1000,10 +1002,14 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-size: 1rem !important;
+  font-size: 14 !important;
   border-radius: 30px;
   grid-area: span 1 / span 1;
   line-height: 6px;
+}
+.store-list-wrap .btn-border {
+  font-size: 14px !important;
+  padding: 10px 20px;
 }
 .create-profile-contnet-wrap {
   text-align: center;
@@ -1011,4 +1017,7 @@ justify-content: center;
 .create-profile-contnet-wrap button {
   border: 0px solid #ccc;
   margin-bottom: 15px;
+}
+.profile-bio-wrap p {
+  font-size: 14px;
 }
