@@ -10205,7 +10205,12 @@ input[type="checkbox"] {
 
 .footer-bar-wraps button {
   background: transparent;
-  border: 0px solid #ccc; }
+  border: 0px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px; }
 
 .footer-bar-wraps button img {
   width: 24px; }
@@ -10214,6 +10219,40 @@ input[type="checkbox"] {
   color: #949BA5;
   font-size: 12px;
   margin-top: 4px; }
+
+.footer-icon-wrap .nav-img {
+  width: 24px;
+  height: 24px; }
+
+.nav-chat {
+  background: url(../images/nav/Nav_Chat_off.svg); }
+
+.active-nav .nav-chat {
+  background: url(../images/nav/Nav_Chat_on.svg); }
+
+.nav-gallery {
+  background: url(../images/nav/nav_gallery_off.svg); }
+
+.active-nav .nav-gallery {
+  background: url(../images/nav/nav_gallery_on.svg); }
+
+.nav-home {
+  background: url(../images/nav/nav_home_off.svg); }
+
+.active-nav .nav-home {
+  background: url(../images/nav/nav_home_on.svg); }
+
+.nav-contact {
+  background: url(../images/nav/nav_contacts_off.svg); }
+
+.active-nav .nav-contact {
+  background: url(../images/nav/nav_contacts_on.svg); }
+
+.nav-settings {
+  background: url(../images/nav/nav_settings_off.svg); }
+
+.active-nav .nav-settings {
+  background: url(../images/nav/nav_settings_on.svg); }
 
 .footer-bar-wraps .active-nav {
   font-weight: 600;
