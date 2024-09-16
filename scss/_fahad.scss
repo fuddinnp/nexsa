@@ -7,6 +7,13 @@ body {
   background: #bfbfbf;
   height: 100vh;
 }
+.flex-item-box {
+  flex: 1 1 auto;
+}
+.flex-item-center {
+  flex: 1 1 auto;
+  text-align: center;
+}
 .top-right-btn {
   gap: 10px;
 }
@@ -214,10 +221,13 @@ background: linear-gradient(90deg, rgba(254,87,89,1) 0%, rgba(142,82,252,1) 100%
   justify-content: flex-start;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
 }
 .tag-opp ul li {
-  border-radius: 15px;
-  padding: 10px 14px;
+  border-radius: 19px;
+  padding: 10px 16px;
+  font-size: 0.8rem;
+  line-height: 14px;
 
 }
 // search bar and chat list css
@@ -304,15 +314,15 @@ background: linear-gradient(90deg, rgba(254,87,89,1) 0%, rgba(142,82,252,1) 100%
   align-items:center;
   cursor: pointer;
   padding: 15px 12px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 0px solid #eee;
 }
 
 .chat-list .chat-box .img-box {
   position:relative;
-  width: 80px;
-  height:62px;
-  overflow:hidden;
-  border-radius: 50%;
+  width: 60px;
+  height:60px;
+  // overflow:hidden;
+  border-radius: 36px;
 }
 
 .chat-list .chat-box .chat-details {
@@ -328,13 +338,13 @@ background: linear-gradient(90deg, rgba(254,87,89,1) 0%, rgba(142,82,252,1) 100%
 }
 
 .chat-list .chat-box .chat-details .text-head h4 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   color: #000;
 }
 
 .chat-list .chat-box .chat-details .text-head .time {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   color: #aaa;
 }
 
@@ -419,8 +429,8 @@ input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   background-color: #fff;
   border: 1px solid #9F9F9F;
   border-radius: 50%;
@@ -430,12 +440,12 @@ input[type="checkbox"] {
   background: linear-gradient(90deg, rgba(254,87,89,1) 0%, rgba(142,82,252,1) 100%);
 }
 .label-container .checkmark:after {
-  left: 8px;
-  top: 4px;
-  width: 5px;
+  left: 9.5px;
+  top: 5px;
+  width: 6px;
   height: 10px;
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -542,11 +552,11 @@ input[type="checkbox"] {
   border: 0px solid #ccc;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 6px;
-  padding: 15px 10px;
-  border-radius:20px ;
+  padding: 15px 38px;
+  border-radius: 50px;
 }
 .create-box-wrap button img {
   width: auto;
@@ -569,7 +579,7 @@ input[type="checkbox"] {
 }
 .onboarding-content-wrap h2 {
   color: #000;
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 10px 40px;
   line-height: 34px;
@@ -577,13 +587,15 @@ input[type="checkbox"] {
 .onboarding-content-wrap p {
   color: #000;
   font-size: 14px;
-  font-weight: 500;
-  padding: 10px 30px;
+  font-weight: 400;
+  padding: 10px 40px;
   line-height: 18px;
 }
 .onboarding-content-wrap button {
   background: transparent;
   border: 0px solid #ccc;
+  padding: 16px 64px;
+
 }
 .welcome-content-wrap {
   display: flex;
@@ -666,7 +678,7 @@ input[type="checkbox"] {
   color: #fff;
   font-size: 14px;
   line-height: 26px !important;
-  padding: 12px 40px;
+  padding: 12px 64px;
   border-radius: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -743,7 +755,7 @@ input[type=file]::file-selector-button:hover {
 }
 textarea {
   width: 100%;
-    height: 150px;
+    height: 98px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 1px solid #bdc3c7;
@@ -782,6 +794,7 @@ textarea {
 .file-box p {
   font-size: 14px;
   color: #374151;
+  font-weight: 600;
 }
 .file-box img {
   width: auto;
@@ -791,19 +804,40 @@ textarea {
 }
 .user-list-row {
   display: flex;
-  gap: 10px;
+  gap: 4px;
   padding: 15px 4px;
 }
+.user-list-row button img {
+  width: 30px;
+}
 .user-list-wrap {
-  display: grid;
-    height: 100%;
-    grid-template-columns: repeat(4, 30%);
-    grid-template-rows: repeat(1, 50%);
-    grid-gap: 0px;
-    grid-auto-columns: 42%;
-    grid-auto-flow: column;
+  display: flex;
+    display: -webkit-box;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: .35rem 1rem;
     overflow-x: scroll;
-    overflow-y: hidden;
+  gap: 18px;
+    width: 100%;
+
+  // display: grid;
+  //   height: 100%;
+  //   grid-template-columns: repeat(4, 30%);
+  //   grid-template-rows: repeat(1, 50%);
+  //   grid-gap: 0px;
+  //   grid-auto-columns: 42%;
+  //   grid-auto-flow: column;
+  //   overflow-x: scroll;
+  //   overflow-y: hidden;
+  //   flex: 1 1 auto;
+}
+.user-list-item {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 // .user-list-wrap div {
 //   display: flex;
@@ -814,9 +848,9 @@ textarea {
 
 .user-list-wrap .img-box {
   position: relative;
-  width: 62px;
-  height: 62px;
-  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  // overflow: hidden;
   border-radius: 50%;
 }
 .user-list-wrap h4 {
@@ -827,7 +861,7 @@ textarea {
   position: relative;
   width: 120px;
   height: 120px;
-  overflow: hidden;
+  // overflow: hidden;
   border-radius: 50%;
 }
 .img-box-border {
@@ -971,7 +1005,7 @@ justify-content: center;
 }
 .preferences-tag-wrap .preferences-tag {
   background-color: #8F52FA;
-  border-radius: 20px;
+  border-radius: 19px;
   color: #fff;
   font-size: 14px;
   padding: 7px 14px;
@@ -985,17 +1019,20 @@ justify-content: center;
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
-  padding: 0px 0px 80px 4px;
+  padding: 0px 0px 15px 4px;
   margin: 25px 0px;
 }
 .store-list-wrap ul{
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   height: 100%;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(3, 50%);
-  grid-gap: 10px;
-  grid-auto-columns: 50%;
-  grid-auto-flow: column;
+  width: 430px;
+  gap: 10px;
+  // grid-template-columns: repeat(2, 50%);
+  // grid-template-rows: repeat(3, 50%);
+  // grid-gap: 10px;
+  // grid-auto-columns: 50%;
+  // grid-auto-flow: column;
 }
 .store-list-wrap ul li {
   display: flex;
@@ -1004,8 +1041,7 @@ justify-content: center;
   gap: 10px;
   font-size: 14 !important;
   border-radius: 30px;
-  grid-area: span 1 / span 1;
-  line-height: 6px;
+    padding: 10px 30px;
 }
 .store-list-wrap .btn-border {
   font-size: 14px !important;
@@ -1020,4 +1056,36 @@ justify-content: center;
 }
 .profile-bio-wrap p {
   font-size: 14px;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.header-back-btn {
+  font-size: 0.9rem;
+}
+.role-tag-btns-wrap {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.role-tag-btns-wrap .btn-border {
+  padding: 12px 20px;
+}
+strong {
+  font-weight: 600;
+}
+.profile-joined-wrap .btn-flat {
+  padding: 8px 16px;
+}
+.btn-select {
+  background: #fe5759 !important;
+  background: linear-gradient(90deg, #fe5759 0%, #8e52fc 100%) !important;
+    color: #fff;
+    font-size: 14px;
+    padding: 14px 30px !important;
+    border-radius: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
