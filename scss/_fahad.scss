@@ -946,7 +946,7 @@ textarea {
 .chat-footer {
   background: #EAEAEA;
   border-radius: 50px;
-  padding: 8px 15px;
+  padding: 6px 8px;
   margin: 12px;
   position: fixed;
   bottom: 0px; 
@@ -1140,7 +1140,7 @@ $avatar-size: 40px;
 
 .avatar-group {
   display: flex;
-  padding-left: 24px;
+  padding-left: 16px;
     margin-top: 15px;
   
   &.rtl {
