@@ -171,6 +171,9 @@ background: linear-gradient(90deg, rgba(254,87,89,1) 0%, rgba(142,82,252,1) 100%
 .text-blue {
   color: #8D52FC;
 }
+.text-pr {
+  color: #374151 !important;
+}
 .add-user-btn {
   background: transparent;
   border: 0px solid #000;
@@ -579,7 +582,7 @@ input[type="checkbox"] {
 }
 .onboarding-content-wrap h2 {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   padding: 10px 40px;
   line-height: 34px;
@@ -902,7 +905,7 @@ textarea {
   margin-bottom: auto;
   margin-left: 10px;
   border-radius: 40px 40px 40px 0px;
-  background-color: #82ccdd;
+  background-color: #8D52FC;
   padding: 10px;
   position: relative;
 }
@@ -1048,9 +1051,7 @@ justify-content: center;
   padding: 10px 12px;
 }
 .store-list-wrap .gradient-primary {
-  border: 2px solid transparent;
-  border-image: linear-gradient(90deg, #fe5759 0%, #8e52fc 100%) 0 !important;
-  border-image-slice: 1;
+  padding: 10px 14px;
 }
 .chooze-size-wrap ul {
   display: flex;
@@ -1078,8 +1079,7 @@ justify-content: center;
   font-size: 0.9rem;
 }
 .role-tag-btns-wrap {
-  gap: 24px;
-  row-gap: 12px;
+  gap: 12px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1177,4 +1177,21 @@ $avatar-size: 40px;
 
 .josefin-font {
   font-family: "Josefin Sans", sans-serif  !important;
+}
+.btn-extra-p {
+  padding: 16px 65px !important;
+}
+.text-small-gray {
+  font-size: 12px !important;
+  color: #b2b2b2 !important;
+}
+.social-links-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+.social-links-wrap button {
+  background: transparent;
+  border: 0px solid #ccc;
 }
