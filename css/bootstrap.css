@@ -10016,9 +10016,12 @@ body {
   padding: 5px;
   height: 34px;
   border-radius: 10px;
-  font-size: 12px;
-  padding-left: 60px;
+  font-size: 16px;
+  padding-left: 43px;
   margin: 10px; }
+
+.search-container .input input::placeholder {
+  color: #767779; }
 
 .search-container .input i {
   position: absolute;
@@ -10325,7 +10328,7 @@ input[type="checkbox"] {
 
 .onboarding-content-wrap h2 {
   color: #000;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 10px 40px;
   line-height: 34px; }
