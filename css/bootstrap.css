@@ -10748,6 +10748,11 @@ textarea {
   font-size: 14px !important;
   padding: 10px 12px; }
 
+.store-list-wrap .gradient-primary {
+  border: 2px solid transparent;
+  border-image: linear-gradient(90deg, #fe5759 0%, #8e52fc 100%) 0 !important;
+  border-image-slice: 1; }
+
 .chooze-size-wrap ul {
   display: flex;
   flex-wrap: nowrap !important;
