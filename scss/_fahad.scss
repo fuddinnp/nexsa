@@ -445,10 +445,11 @@ input[type="checkbox"] {
 .label-container input:checked ~ .checkmark {
   background: rgb(254,87,89);
   background: linear-gradient(90deg, rgba(254,87,89,1) 0%, rgba(142,82,252,1) 100%);
+  border: 0px solid #9F9F9F;
 }
 .label-container .checkmark:after {
   left: 9.5px;
-  top: 5px;
+  top: 6px;
   width: 6px;
   height: 10px;
   border: solid white;

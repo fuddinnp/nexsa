@@ -10186,11 +10186,12 @@ input[type="checkbox"] {
 
 .label-container input:checked ~ .checkmark {
   background: #fe5759;
-  background: linear-gradient(90deg, #fe5759 0%, #8e52fc 100%); }
+  background: linear-gradient(90deg, #fe5759 0%, #8e52fc 100%);
+  border: 0px solid #9F9F9F; }
 
 .label-container .checkmark:after {
   left: 9.5px;
-  top: 5px;
+  top: 6px;
   width: 6px;
   height: 10px;
   border: solid white;
